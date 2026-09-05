@@ -1,0 +1,205 @@
+.add-guest-page {
+  min-height: 100vh;
+  padding: 36px;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(99, 102, 241, 0.13), transparent 28%),
+    radial-gradient(circle at 90% 15%, rgba(236, 72, 153, 0.12), transparent 28%),
+    linear-gradient(135deg, #f8faff, #f5f3ff, #fff8fc);
+  color: #172033;
+}
+
+.add-guest-header {
+  max-width: 1100px;
+  margin: 0 auto 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.guest-kicker {
+  color: #7048e8;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.add-guest-header h1 {
+  margin: 8px 0 5px;
+  font-size: 34px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #4f46e5, #9333ea, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add-guest-header p {
+  margin: 0;
+  color: #737d91;
+  font-size: 14px;
+}
+
+.guest-back-btn {
+  border: 1px solid #ddd8ff;
+  background: white;
+  color: #5946d8;
+  padding: 12px 18px;
+  border-radius: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.guest-back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.12);
+}
+
+.guest-form-card {
+  max-width: 1100px;
+  margin: auto;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  box-shadow: 0 20px 55px rgba(67, 56, 202, 0.11);
+  backdrop-filter: blur(18px);
+}
+
+.form-section {
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #eceaf5;
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.form-section h2 {
+  margin: 0 0 5px;
+  color: #20283d;
+  font-size: 20px;
+}
+
+.form-section > p {
+  margin: 0 0 24px;
+  color: #7a8498;
+  font-size: 13px;
+}
+
+.guest-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.guest-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.guest-field label {
+  margin-bottom: 8px;
+  color: #39445c;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.guest-field input,
+.guest-field select,
+.guest-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px;
+  border: 1px solid #e1e4ee;
+  border-radius: 13px;
+  outline: none;
+  background: #fbfcff;
+  color: #20283d;
+  font-family: inherit;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.guest-field input,
+.guest-field select {
+  height: 49px;
+}
+
+.guest-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.guest-field input:focus,
+.guest-field select:focus,
+.guest-field textarea:focus {
+  background: white;
+  border-color: #8067ee;
+  box-shadow: 0 0 0 4px rgba(128, 103, 238, 0.1);
+}
+
+.guest-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.cancel-guest-btn,
+.save-guest-btn {
+  padding: 13px 22px;
+  border-radius: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.cancel-guest-btn {
+  border: 1px solid #dedfea;
+  background: white;
+  color: #596276;
+}
+
+.save-guest-btn {
+  border: none;
+  color: white;
+  background: linear-gradient(135deg, #5b4de8, #9b3bea, #ec4899);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.22);
+}
+
+.cancel-guest-btn:hover,
+.save-guest-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .add-guest-page {
+    padding: 20px;
+  }
+
+  .add-guest-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .guest-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guest-form-card {
+    padding: 22px;
+  }
+
+  .guest-form-actions {
+    flex-direction: column;
+  }
+
+  .cancel-guest-btn,
+  .save-guest-btn,
+  .guest-back-btn {
+    width: 100%;
+  }
+}

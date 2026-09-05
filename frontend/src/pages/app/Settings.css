@@ -1,0 +1,286 @@
+.settings-page {
+  padding: 32px;
+  min-height: 100vh;
+  background: #f6f7ff;
+  color: #20244a;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.settings-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #7657ff;
+}
+
+.settings-header h1 {
+  margin: 5px 0;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.settings-header p {
+  margin: 0;
+  color: #777b99;
+}
+
+.settings-save-btn {
+  border: 0;
+  padding: 13px 24px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6048ff, #c63cff);
+  box-shadow: 0 10px 25px rgba(108, 73, 255, 0.25);
+}
+
+.settings-layout {
+  display: grid;
+  gap: 22px;
+  max-width: 1100px;
+}
+
+.settings-card {
+  background: white;
+  border: 1px solid #e9e7ff;
+  border-radius: 22px;
+  padding: 25px;
+  box-shadow: 0 12px 35px rgba(66, 58, 130, 0.07);
+}
+
+.settings-card-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #eeeeF8;
+  margin-bottom: 22px;
+}
+
+.settings-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.profile-icon {
+  background: #eeeaff;
+}
+
+.notification-icon {
+  background: #fff0dc;
+}
+
+.event-icon {
+  background: #e5f9ff;
+}
+
+.security-icon {
+  background: #ffe9f2;
+}
+
+.settings-card-title h2 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.settings-card-title p {
+  margin: 0;
+  font-size: 13px;
+  color: #888ba5;
+}
+
+.settings-form {
+  display: flex;
+  gap: 30px;
+}
+
+.settings-avatar {
+  width: 130px;
+  text-align: center;
+}
+
+.settings-avatar > div {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #6048ff, #ec4ab6);
+}
+
+.settings-avatar button {
+  border: 0;
+  background: transparent;
+  color: #674cff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.settings-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.field-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.field-group label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #555a79;
+}
+
+.field-group input,
+.field-group select {
+  width: 100%;
+  box-sizing: border-box;
+  height: 44px;
+  padding: 0 13px;
+  border: 1px solid #dedff0;
+  border-radius: 10px;
+  outline: none;
+  background: #fafaff;
+  color: #292d50;
+  font-size: 13px;
+}
+
+.field-group input:focus,
+.field-group select:focus {
+  border-color: #7657ff;
+  box-shadow: 0 0 0 3px rgba(118, 87, 255, 0.08);
+}
+
+.field-group input:disabled {
+  color: #8b8da3;
+  cursor: not-allowed;
+}
+
+.settings-options {
+  display: grid;
+  gap: 5px;
+}
+
+.setting-option,
+.security-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 0;
+  border-bottom: 1px solid #f0f0f7;
+}
+
+.setting-option:last-child,
+.security-row:last-child {
+  border-bottom: 0;
+}
+
+.setting-option strong,
+.security-row strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.setting-option span,
+.security-row span {
+  color: #8a8da5;
+  font-size: 12px;
+}
+
+.toggle {
+  width: 48px;
+  height: 27px;
+  border: 0;
+  padding: 3px;
+  border-radius: 20px;
+  background: #d9dbea;
+  cursor: pointer;
+}
+
+.toggle span {
+  display: block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: white;
+  transition: 0.2s;
+}
+
+.toggle.active {
+  background: linear-gradient(135deg, #654cff, #bf3cff);
+}
+
+.toggle.active span {
+  transform: translateX(21px);
+}
+
+.secondary-btn {
+  border: 1px solid #dcdcf0;
+  background: white;
+  color: #624cff;
+  padding: 9px 15px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background: #f5f2ff;
+}
+
+@media (max-width: 800px) {
+  .settings-page {
+    padding: 20px;
+  }
+
+  .settings-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .settings-form {
+    flex-direction: column;
+  }
+
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field-group.full-width {
+    grid-column: auto;
+  }
+
+  .setting-option,
+  .security-row {
+    gap: 15px;
+  }
+}

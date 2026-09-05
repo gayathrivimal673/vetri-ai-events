@@ -1,0 +1,511 @@
+/* =========================================
+   CREATE EVENT PAGE
+   Vetri EventOS - Premium Colorful UI
+========================================= */
+
+.create-event-page {
+  min-height: 100vh;
+  margin-left: 250px;
+  padding: 38px 42px 60px;
+  background:
+    radial-gradient(circle at 85% 5%, rgba(92, 76, 255, 0.12), transparent 28%),
+    radial-gradient(circle at 15% 30%, rgba(0, 196, 255, 0.08), transparent 25%),
+    #f7f8ff;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.create-event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #635bff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.create-event-header h1 {
+  margin: 0;
+  color: #191a46;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.create-event-header p {
+  margin: 8px 0 0;
+  color: #777b9b;
+  font-size: 15px;
+}
+
+.back-btn {
+  border: 1px solid #e0e2f2;
+  background: white;
+  color: #34365f;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 5px 18px rgba(39, 41, 100, 0.06);
+}
+
+.back-btn:hover {
+  color: #ffffff;
+  background: linear-gradient(135deg, #635bff, #9b51e0);
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.create-event-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.75fr);
+  gap: 28px;
+  align-items: start;
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.create-event-card {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #e8e9f5;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 18px 55px rgba(43, 47, 112, 0.09);
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eeeeF7;
+}
+
+.title-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #635bff, #e45cff);
+  color: white;
+  font-size: 21px;
+  box-shadow: 0 8px 20px rgba(99, 91, 255, 0.24);
+}
+
+.card-title h2 {
+  margin: 0;
+  color: #20214c;
+  font-size: 21px;
+}
+
+.card-title p {
+  margin: 4px 0 0;
+  color: #8588a5;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.create-error {
+  margin-bottom: 20px;
+  padding: 13px 16px;
+  border-radius: 12px;
+  background: #fff1f3;
+  border: 1px solid #ffcdd5;
+  color: #c62848;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.create-event-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #34365f;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  border: 1px solid #dedff0;
+  border-radius: 12px;
+  background: #fbfbff;
+  color: #272950;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #aaaec4;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #635bff;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(99, 91, 255, 0.09);
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+}
+
+
+/* =========================================
+   BUDGET INPUT
+========================================= */
+
+.budget-input {
+  position: relative;
+}
+
+.budget-input span {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #635bff;
+  font-size: 16px;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.budget-input input {
+  padding-left: 34px;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.create-event-submit {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 54px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    #635bff 0%,
+    #8557e8 45%,
+    #e052c9 100%
+  );
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(99, 91, 255, 0.28);
+  transition: 0.25s ease;
+}
+
+.create-event-submit span {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.create-event-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(99, 91, 255, 0.34);
+}
+
+.create-event-submit:active {
+  transform: translateY(0);
+}
+
+.create-event-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.create-event-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* =========================================
+   AI CARD
+========================================= */
+
+.ai-create-card {
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  min-height: 330px;
+  border-radius: 24px;
+  color: white;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(255,255,255,0.25), transparent 30%),
+    radial-gradient(circle at 10% 90%, rgba(0,220,255,0.25), transparent 30%),
+    linear-gradient(145deg, #312b8f, #635bff 48%, #d94fca);
+  box-shadow: 0 20px 45px rgba(80, 64, 190, 0.22);
+}
+
+.ai-create-card::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: -65px;
+  bottom: -60px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.22);
+}
+
+.ai-create-card::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  right: 20px;
+  top: 70px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.16);
+}
+
+.ai-badge {
+  display: inline-flex;
+  padding: 7px 11px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 50px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.ai-create-card h2 {
+  position: relative;
+  z-index: 1;
+  margin: 20px 0 12px;
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.ai-create-card > p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  max-width: 330px;
+  color: rgba(255,255,255,0.82);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.ai-features {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 11px;
+  margin-top: 23px;
+}
+
+.ai-features div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: white;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.ai-features span {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.18);
+  font-size: 11px;
+}
+
+
+/* =========================================
+   INFO CARD
+========================================= */
+
+.info-card {
+  display: flex;
+  gap: 15px;
+  padding: 22px;
+  border: 1px solid #e8e8f4;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 12px 32px rgba(42, 45, 108, 0.07);
+}
+
+.info-icon {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #fff2d9;
+  font-size: 19px;
+}
+
+.info-card h3 {
+  margin: 2px 0 6px;
+  color: #292b52;
+  font-size: 15px;
+}
+
+.info-card p {
+  margin: 0;
+  color: #7d809d;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+  .create-event-page {
+    padding: 30px;
+  }
+
+  .create-event-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .create-event-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .create-event-page {
+    margin-left: 0;
+    padding: 24px 18px 40px;
+  }
+
+  .create-event-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .create-event-header h1 {
+    font-size: 28px;
+  }
+
+  .back-btn {
+    width: 100%;
+  }
+
+  .create-event-card {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .create-event-side {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .create-event-page {
+    padding: 20px 14px 35px;
+  }
+
+  .create-event-header h1 {
+    font-size: 25px;
+  }
+
+  .create-event-header p {
+    line-height: 1.5;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 19px;
+  }
+
+  .card-title {
+    align-items: flex-start;
+  }
+
+  .title-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .ai-create-card {
+    padding: 24px;
+  }
+
+  .ai-create-card h2 {
+    font-size: 24px;
+  }
+}

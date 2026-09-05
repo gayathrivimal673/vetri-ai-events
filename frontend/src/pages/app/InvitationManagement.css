@@ -1,0 +1,348 @@
+.invitation-page {
+  min-height: 100vh;
+  padding: 34px;
+  background:
+    radial-gradient(circle at 90% 0%, rgba(103, 80, 240, 0.13), transparent 30%),
+    #f7f8ff;
+  color: #182043;
+}
+
+.invitation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+}
+
+.back-btn {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: #6255dc;
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.invitation-kicker {
+  display: block;
+  color: #725de8;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.invitation-header h1 {
+  margin: 7px 0;
+  font-size: 32px;
+}
+
+.invitation-header p {
+  margin: 0;
+  color: #7d849d;
+}
+
+.whatsapp-main-btn {
+  border: 0;
+  border-radius: 13px;
+  padding: 13px 20px;
+  color: white;
+  background: linear-gradient(135deg, #20b86a, #0f9f61);
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(20, 165, 94, 0.2);
+}
+
+.invitation-layout {
+  display: grid;
+  grid-template-columns: 1.7fr 0.8fr;
+  gap: 22px;
+}
+
+.invitation-main-card,
+.message-card {
+  background: white;
+  border: 1px solid #e8eaff;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(40, 45, 100, 0.05);
+}
+
+.card-heading {
+  padding: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eef0f6;
+}
+
+.card-heading h2,
+.message-card h2 {
+  margin: 0 0 5px;
+  font-size: 19px;
+}
+
+.card-heading p,
+.message-card p {
+  margin: 0;
+  color: #8a91a7;
+  font-size: 13px;
+}
+
+.select-all-btn {
+  border: 1px solid #dedff0;
+  background: white;
+  color: #6256d7;
+  padding: 9px 13px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.invitation-list {
+  padding: 8px 22px;
+}
+
+.invitation-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 4px;
+  border-bottom: 1px solid #f0f1f7;
+}
+
+.invitation-row.selected {
+  background: #f6f4ff;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.invitation-row input {
+  width: 17px;
+  height: 17px;
+  accent-color: #6557e2;
+}
+
+.inv-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #e0e5ff, #f2ddff);
+  color: #6658dc;
+  font-weight: 800;
+}
+
+.inv-person {
+  flex: 1;
+}
+
+.inv-person strong,
+.inv-person span,
+.inv-guests span {
+  display: block;
+}
+
+.inv-person strong {
+  color: #2b3153;
+  font-size: 14px;
+}
+
+.inv-person span,
+.inv-guests span {
+  color: #9298ab;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.inv-guests {
+  width: 65px;
+}
+
+.inv-guests strong {
+  color: #293052;
+}
+
+.inv-channel {
+  width: 100px;
+  color: #66708b;
+  font-size: 12px;
+}
+
+.inv-channel span {
+  margin-right: 5px;
+}
+
+.inv-status {
+  min-width: 70px;
+  text-align: center;
+  padding: 6px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.inv-status.delivered {
+  background: #e5faef;
+  color: #15965f;
+}
+
+.inv-status.accepted {
+  background: #e6edff;
+  color: #536dcc;
+}
+
+.inv-status.pending {
+  background: #fff1d8;
+  color: #c77b0c;
+}
+
+.send-section {
+  padding: 20px 23px;
+  background: #fafaff;
+  border-top: 1px solid #eef0f6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.send-section strong,
+.send-section span {
+  display: block;
+}
+
+.send-section strong {
+  font-size: 14px;
+}
+
+.send-section span {
+  color: #8c92a6;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.send-invitation-btn {
+  border: 0;
+  border-radius: 11px;
+  padding: 12px 18px;
+  color: white;
+  background: linear-gradient(135deg, #5b4ee4, #9b70f7);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.message-card {
+  padding: 23px;
+}
+
+.message-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.message-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  background: #fff0f5;
+  font-size: 20px;
+}
+
+.message-card label {
+  display: block;
+  margin-bottom: 8px;
+  color: #4d5570;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.message-card textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  border: 1px solid #e1e3ef;
+  border-radius: 12px;
+  padding: 13px;
+  outline: none;
+  font-family: inherit;
+  color: #4d5570;
+  line-height: 1.6;
+}
+
+.message-card textarea:focus {
+  border-color: #7767e8;
+}
+
+.message-preview {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #fff4fa, #f1efff);
+  text-align: center;
+}
+
+.message-preview > span {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #a17a9a;
+  font-weight: 800;
+}
+
+.message-preview h3 {
+  color: #653f88;
+  margin: 12px 0;
+}
+
+.message-preview p {
+  line-height: 1.6;
+  color: #69627a;
+}
+
+.message-preview strong {
+  display: block;
+  color: #4c3d83;
+  margin: 10px 0;
+}
+
+.message-preview small {
+  color: #8b829b;
+  line-height: 1.7;
+}
+
+@media (max-width: 1000px) {
+  .invitation-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .invitation-page {
+    padding: 20px;
+  }
+
+  .invitation-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .invitation-row {
+    min-width: 700px;
+  }
+
+  .invitation-list {
+    overflow-x: auto;
+  }
+
+  .send-section {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

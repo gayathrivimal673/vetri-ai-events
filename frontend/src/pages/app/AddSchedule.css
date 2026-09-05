@@ -1,0 +1,190 @@
+.add-schedule-page {
+  min-height: 100vh;
+  padding: 34px;
+  background:
+    radial-gradient(circle at 85% 5%, rgba(108, 82, 255, 0.12), transparent 28%),
+    radial-gradient(circle at 5% 85%, rgba(0, 190, 255, 0.08), transparent 25%),
+    #f7f9ff;
+  color: #172033;
+}
+
+.schedule-top {
+  max-width: 900px;
+  margin: 0 auto 28px;
+}
+
+.back-btn {
+  border: 0;
+  background: transparent;
+  color: #6268df;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 22px;
+  padding: 0;
+}
+
+.schedule-eyebrow {
+  color: #6b6df6;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.schedule-top h1 {
+  font-size: 34px;
+  margin: 7px 0;
+  letter-spacing: -1px;
+}
+
+.schedule-top p {
+  margin: 0;
+  color: #80889b;
+  font-size: 14px;
+}
+
+.schedule-form-card {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border: 1px solid #e7eaf3;
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 15px 45px rgba(35, 47, 90, 0.08);
+}
+
+.form-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #edf0f6;
+}
+
+.form-icon {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #e9edff, #f4eaff);
+  font-size: 23px;
+}
+
+.form-heading h2 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.form-heading p {
+  margin: 0;
+  color: #8a92a5;
+  font-size: 13px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-size: 12px;
+  font-weight: 800;
+  color: #41495c;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dfe3ee;
+  border-radius: 11px;
+  padding: 13px 14px;
+  font-family: inherit;
+  font-size: 13px;
+  color: #252c3d;
+  outline: none;
+  background: #fbfcff;
+  transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #7168f5;
+  box-shadow: 0 0 0 3px rgba(113, 104, 245, 0.09);
+  background: white;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid #edf0f6;
+}
+
+.cancel-btn,
+.save-schedule-btn {
+  padding: 13px 22px;
+  border-radius: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: white;
+  border: 1px solid #dfe3ed;
+  color: #6d7588;
+}
+
+.save-schedule-btn {
+  border: 0;
+  color: white;
+  background: linear-gradient(135deg, #5967ff, #9b45ed);
+  box-shadow: 0 10px 22px rgba(92, 83, 231, 0.2);
+}
+
+@media (max-width: 700px) {
+  .add-schedule-page {
+    padding: 20px;
+  }
+
+  .schedule-form-card {
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .cancel-btn,
+  .save-schedule-btn {
+    width: 100%;
+  }
+}
